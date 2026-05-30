@@ -5,6 +5,7 @@ body{
     background-color: pink;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
    
@@ -21,8 +22,8 @@ body{
 }
 .grid{
 
-    width: 32px;
-    height:32px;
+    /* width: 32px;
+    height:32px; */
     
     border:1px solid blue;
 
