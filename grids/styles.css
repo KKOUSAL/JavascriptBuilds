@@ -8,7 +8,7 @@
 .container {
 
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+  grid-template: 100px 1fr 1fr 1fr/ 180px 1fr 1fr 1fr;
 
   background-color: grey;
   height: 100vh; 
@@ -39,10 +39,29 @@
   background-color: blue;
   grid-row: 2/5;
   grid-column: 2/4;
+  margin: 12px;
 
 }
 .announcements{
     background-color: green;
      grid-column: 4/5;
+     margin: 12px;
     
+}
+
+.dashboard{
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.menu{
+    padding: 15px;
+}
+.items{
+    margin: 5px;
+}
+.support_menu{
+    margin-top: 30px;
+    padding: 15px;
+
 }
