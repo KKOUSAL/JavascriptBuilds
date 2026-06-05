@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    /* height: 100%; */
+}
+
+
+
+.container {
+
+    
+  display: grid;
+  grid-template: 100px 100px 1fr 100px/ 220px 1fr;
+  border: 1px solid red;
+  background-color: lightblue;
+  height: 100vh; 
+  padding: 12px;
+}
+
+.container div{
+    border: 1px solid green;
+    margin: 8px;
+    border-radius: 10px;
+    text-align: center;
+
+
+
+}
+.header{
+
+    background-color: white;
+    grid-column: 1/3;
+    grid-row: 1;
+    
+}
+.sidebar{
+    background-color: blanchedalmond;
+   
+    grid-row: 2/4;
+}
+.nav{
+  background-color: red;
+}
+.article{
+  background-color: blue;
+
+}
+.footer{
+    background-color: green;
+     grid-column: 1/3;
+    
+}

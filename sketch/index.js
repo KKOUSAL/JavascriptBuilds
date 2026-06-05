@@ -20,7 +20,7 @@ inputSize.addEventListener("keypress",(e)=>{
 
 function buildGrid(){
 
-    gridContainer.innerHTML = ""; //to lear the container everytime//
+    gridContainer.innerHTML = ""; //to clear the container everytime//
 
     let totalSqaures = number * number;
 
