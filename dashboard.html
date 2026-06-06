@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px 2fr 2fr 1fr;
+    grid-template-rows: 150px 1fr 1fr 1fr;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* ==================== SIDEBAR ==================== */
+.sidebar {
+    background-color: rgb(46, 191, 248);
+    color: white;
+    grid-column: 1;
+    grid-row: 1 / -1;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.logo {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    flex: 1;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    margin: 4px 8px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+}
+
+.items:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.support_menu {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+/* ==================== HEADER ==================== */
+.header {
+    grid-column: 2 / -1;
+    grid-row: 1;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.search_area {
+    flex: 1;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #333;
+    padding: 10px 16px;
+    border-radius: 50px;
+    max-width: 500px;
+}
+
+.search_box img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.search_box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.greet, .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.greeting p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btns {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* ==================== PROJECTS & ANNOUNCEMENTS ==================== */
+.projects {
+    grid-column: 2 / 4;
+    grid-row: 2 / -1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.project_card {
+    background-color: rgb(157, 156, 156);
+    padding: 16px;
+    border-radius: 12px;
+    border-left: 6px solid #333;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project_card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.announcements {
+    grid-column: 4;
+    grid-row: 2 / -1;
+    background: white;
+    padding: 20px;
+    margin: 20px 20px 20px 0;
+    border-radius: 12px;
+    overflow-y: auto;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/icons/view-dashboard-outline.svg" alt="">
+                DashBoard
+            </div>
+            <div class="nav">
+                <div class="menu">
+                    <div class="items"><img src="images/menu_icons/house-door-fill.svg" alt="">Home</div>
+                    <div class="items"><img src="images/menu_icons/person-fill.svg" alt="">Profile</div>
+                    <div class="items"><img src="images/menu_icons/chat-left-fill.svg" alt="">Messages</div>
+                    <div class="items"><img src="images/menu_icons/clock-fill.svg" alt="">History</div>
+                    <div class="items"><img src="images/menu_icons/collection-fill.svg" alt="">Tasks</div>
+                    <div class="items"><img src="images/menu_icons/people-fill.svg" alt="">Communities</div>
+                </div>
+
+                <div class="support_menu">
+                    <div class="items">Settings</div>
+                    <div class="items">Support</div>
+                    <div class="items">Privacy</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="search_area">
+                <div class="search_box">
+                    <img src="images/icons/search.svg" alt="">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+
+            <div class="greet">
+                <img src="images/icons/images.png" alt="">
+                <div class="greeting">
+                    <p>Hi there,</p>
+                    <h3>Kousal</h3>
+                </div>
+            </div>
+
+            <div class="user">
+                <img src="images/icons/images.png" alt="">
+                <span>KOUSAL</span>
+            </div>
+
+            <div class="buttons">
+                <button class="btns">New</button>
+                <button class="btns">Upload</button>
+                <button class="btns">Share</button>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="projects">
+            <div class="project_card">
+                <p><strong>World Hunger Project</strong></p>
+                <p>Large scale Project created to solve World Hunger using *#*#/?* on a large scale</p>
+            </div>
+            <div class="project_card">
+                <p><strong>World Hunger Project</strong></p>
+                <p>Large scale Project created to solve World Hunger using *#*#/?* on a large scale</p>
+            </div>
+            <div class="project_card">
+                <p><strong>World Hunger Project</strong></p>
+                <p>Large scale Project created to solve World Hunger using *#*#/?* on a large scale</p>
+            </div>
+            <div class="project_card">
+                <p><strong>World Hunger Project</strong></p>
+                <p>Large scale Project created to solve World Hunger using *#*#/?* on a large scale</p>
+            </div>
+            <div class="project_card">
+                <p><strong>World Hunger Project</strong></p>
+                <p>Large scale Project created to solve World Hunger using *#*#/?* on a large scale</p>
+            </div>
+        </div>
+
+        <!-- Announcements -->
+        <div class="announcements">
+            <h3>Announcements</h3>
+            <p>Site Maintenance scheduled for tomorrow.</p>
+            <p>Community Share Day this weekend.</p>
+        </div>
+    </div>
+
+</body>
+</html>
