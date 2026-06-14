@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:100vh;
+    overflow:hidden;
+    background-color:#34495e ;
+
+
+}
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 5px solid #dde;
+    position: relative;
+     overflow: hidden; 
+         transition: transform 5s ease-out;
+}
+
+.container div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-origin: 50% 50%;
+    
+    
+     clip-path: polygon(50% 50%, 100% 0%, 100% 100%); 
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.one{
+    background-color: #ff4d4d;
+    transform: rotate(0deg);
+    
+}
+.two{
+    background-color: #dd0de0;
+    transform: rotate(90deg);
+}
+.three{
+    background-color: #0582ff;
+    transform: rotate(180deg);
+}
+.four{
+    background-color: #c6c619;
+    transform: rotate(270deg);
+}
+
+
